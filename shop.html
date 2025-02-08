@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/shop.css" />
+    <script src="winkelmand.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lgo">
+        <img src="fotos/Logo_Groom_Style.png" alt="logo shop" width="90" />
+      </div>
+      <div class="mandButton">
+        <button class="toggle-winkelmand">
+          <img
+            src="fotos/winkelmand.png"
+            alt="mandicoon"
+            height="20"
+            width="40"
+          />
+        </button>
+      </div>
+    </header>
+    <aside class="winkelmand">
+      <button class="close_winkelmand">&times;</button>
+      <h2>Winkelmandje</h2>
+      <div class="listCart">
+        <div class="item"></div>
+      </div>
+      <div class="winkelmand-total">
+        <span>Subtotaal:</span>
+        <span id="subtotaal">€0.00</span>
+      </div>
+    </aside>
+    <main>
+      <ul>
+        <!-- Product 1 -->
+        <li>
+          <img src="fotos/beige.jpg" alt="beige kostuum" width="60%" />
+          <div>
+            <span class="product-name">Beige Kostuum</span> <br />
+            <span class="product-price">€60,99</span> <br />
+            <p>Beige kostuum met 1 knop</p>
+            <button class="pr1"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Beige Kostuum"
+              data-price="60.99"
+              data-img="fotos/beige.jpg"
+            >
+              In winkelwagen
+            </button>
+
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 2 -->
+        <li>
+          <img src="fotos/blackSuit.jpg" alt="zwart kostuum" width="60%" />
+          <div>
+            <span class="product-name">Zwart Kostuum</span> <br />
+            <span class="product-price">€70,99</span> <br />
+            <p>Zwart kostuum met 3 knoppen</p>
+            <button class="pr2"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Zwart Kostuum"
+              data-price="70.99"
+              data-img="fotos/blackSuit.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 3 -->
+        <li>
+          <img src="fotos/bordeaux.jpg" alt="bordeaux kostuum" width="60%" />
+          <div>
+            <span class="product-name">Bordeaux Kostuum</span> <br />
+            <span class="product-price">€50,99</span> <br />
+            <p>Bordeaux kostuum met 1 knop</p>
+            <button class="pr3"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Bordeaux Kostuum"
+              data-price="50.99"
+              data-img="fotos/bordeaux.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 4 -->
+        <li>
+          <img src="fotos/brown.jpg" alt="bruin kostuum" width="60%" />
+          <div>
+            <span class="product-name">Bruin Kostuum</span> <br />
+            <span class="product-price">€80,99</span> <br />
+            <p>Bruin kostuum met 3 knoppen</p>
+            <button class="pr4"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Bruin Kostuum"
+              data-price="80.99"
+              data-img="fotos/brown.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 5 -->
+        <li>
+          <img
+            src="fotos/darkBlue_withstripes.jpg"
+            alt="donker blauw met streepjes"
+            width="60%"
+          />
+          <div>
+            <span class="product-name">Donkerblauw Kostuum met Streepjes</span>
+            <br />
+            <span class="product-price">€99,99</span> <br />
+            <p>Donkerblauw kostuum met witte streepjes en 3 knoppen</p>
+            <button class="pr5"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Donkerblauw Kostuum met Streepjes"
+              data-price="99.99"
+              data-img="fotos/darkBlue_withstripes.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 6 -->
+        <li>
+          <img
+            src="fotos/darkblueDiamond.jpg"
+            alt="donker blauw met ruiten"
+            width="60%"
+          />
+          <div>
+            <span class="product-name">Donkerblauw Kostuum met Ruiten</span>
+            <br />
+            <span class="product-price">€105,00</span> <br />
+            <p>Donkerblauw kostuum met ruitjes en 3 knoppen</p>
+            <button class="pr6"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Donkerblauw Kostuum met Ruiten"
+              data-price="105.00"
+              data-img="fotos/darkblueDiamond.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 7 -->
+        <li>
+          <img
+            src="fotos/darkblueStripes.jpg"
+            alt="donker blauw met streepjes"
+            width="60%"
+          />
+          <div>
+            <span class="product-name">Donkerblauw Kostuum met Streepjes</span>
+            <br />
+            <span class="product-price">€80,00</span> <br />
+            <p>Donkerblauw kostuum met blauwe streepjes en 1 knop</p>
+            <button class="pr7"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Donkerblauw Kostuum met Streepjes"
+              data-price="80.00"
+              data-img="fotos/darkblueStripes.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 8 -->
+        <li>
+          <img src="fotos/gray.jpg" alt="grijs kostuum" width="60%" />
+          <div>
+            <span class="product-name">Grijs Kostuum</span> <br />
+            <span class="product-price">€87,99</span> <br />
+            <p>Grijs kostuum met 2 knoppen</p>
+            <button class="pr8"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Grijs Kostuum"
+              data-price="87.99"
+              data-img="fotos/gray.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 9 -->
+        <li>
+          <img src="fotos/graydotted.jpg" alt="grijs gestipt" width="60%" />
+          <div>
+            <span class="product-name">Grijs Kostuum met Streepjes</span> <br />
+            <span class="product-price">€91,99</span> <br />
+            <p>Grijs kostuum met streepjes en 1 knop</p>
+            <button class="pr9"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Grijs Kostuum met Streepjes"
+              data-price="91.99"
+              data-img="fotos/graydotted.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 10 -->
+        <li>
+          <img src="fotos/lightBlue.jpg" alt="lichtblauw kostuum" width="60%" />
+          <div>
+            <span class="product-name">Lichtblauw Kostuum</span> <br />
+            <span class="product-price">€89,99</span> <br />
+            <p>Lichtblauw kostuum met 2 knoppen</p>
+            <button class="pr10"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Lichtblauw Kostuum"
+              data-price="89.99"
+              data-img="fotos/lightBlue.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 11 -->
+        <li>
+          <img
+            src="fotos/shiny_black.jpg"
+            alt="shiny zwart kostuum"
+            width="60%"
+          />
+          <div>
+            <span class="product-name">Shiny Zwart Kostuum</span> <br />
+            <span class="product-price">€93,50</span> <br />
+            <p>Shiny zwart kostuum met 1 knop</p>
+            <button class="pr11"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Shiny Zwart Kostuum"
+              data-price="93.50"
+              data-img="fotos/shiny_black.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- Product 12 -->
+        <li>
+          <img src="fotos/multiplesuits.jpg" alt="combo kostuum" width="60%" />
+          <div>
+            <span class="product-name">Blauw/Grijs Combo Kostuum</span> <br />
+            <span class="product-price">€100,00</span> <br />
+            <p>Blauw en grijs kostuum met 2 knoppen</p>
+            <button class="pr12"><a href="product.html">KOOP</a></button>
+            <button
+              class="addCart"
+              data-name="Blauw/Grijs Combo Kostuum"
+              data-price="100.00"
+              data-img="fotos/multiplesuits.jpg"
+            >
+              In winkelwagen
+            </button>
+            <button class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <section class="reviews">
+      <h2>Klantenreviews</h2>
+      <div class="review">
+        <p><strong>Jan de osman</strong></p>
+        <p>"Geweldig kostuum, perfect voor mijn bruiloft!"</p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="review">
+        <p><strong>Harry potter</strong></p>
+        <p>"Zeer tevreden met de kwaliteit en pasvorm."</p>
+        <span>⭐⭐⭐⭐</span>
+      </div>
+      <div class="review">
+        <p><strong>Tony Stark</strong></p>
+        <p>
+          "Voor een multimiljardair is dit de beste plek om mijn kostuums te
+          kopen "
+        </p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="review">
+        <p><strong>Peter Parker</strong></p>
+        <p>"Lekker strak in pak voor Amjay"</p>
+        <span>⭐⭐⭐⭐</span>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p><a href="contact.html">contact ons</a></p>
+        <p>Volg ons</p>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="fotos/facebook.png" alt="facebook" width="40"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="fotos/instagram.png" alt="instagram" width="40"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="fotos/tiktoklogo.webp" alt="tiktok" width="40"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p>Groom &amp; Style</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d7b58f;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7b58f;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border: 1px solid black;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+nav ul li:hover {
+  color: white;
+  letter-spacing: 1px;
+}
+.lgo {
+  /* width: 50%; */
+  /* margin-left: 13rem; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+main {
+  background-color: #d7b58f;
+  /* margin-top: 80px; */
+}
+main > .midden {
+  height: 250px;
+  background-image: url("../fotos/sfeerbeeld_foto suit shop.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 1rem 1rem;
+}
+/* MAIN GEDEELTE*/
+main > .midden p {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #d7b58f;
+  padding: 2px;
+}
+main > h1 {
+  padding: 1rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .product {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  /* padding: 2rem; */
+}
+main .product figure p {
+  justify-content: center;
+}
+main .product figure p a {
+  background-color: black;
+  color: #d7b58f;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+}
+main .product figure p a:hover {
+  background-color: white;
+  color: black;
+}
+main .product figure img {
+  border-radius: 10px;
+  max-width: 100px;
+}
+main > h2 {
+  padding: 1rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+main > .infome {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 2rem;
+  align-items: center;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+main > .infome img {
+  max-width: 250px;
+  height: 100%;
+  flex: 1 0 auto;
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+main > .infome p {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+  line-height: 1.6;
+  border-radius: 5px;
+}
+main > .info p {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+  line-height: 1.6;
+  border-radius: 5px;
+}
+footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+footer p {
+  padding-bottom: 1rem;
+}
+footer div ul {
+  display: flex;
+}
+footer > p {
+  font-size: 30px;
+  color: #d7b58f;
+  margin-left: 30%;
+  margin-right: auto;
+}
+
+@media (min-width: 810px) {
+  nav ul {
+    font-size: 10px;
+  }
+
+  nav ul li {
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 2px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    /*bij een split second op 800px gaat logo rechts,...*/
+  }
+  .lgo {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  main > .midden {
+    height: 30rem;
+  }
+
+  main .midden div p {
+    font-size: 13px;
+  }
+
+  main .product figure {
+    padding: 1rem;
+  }
+  main .product figure img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 200px;
+  }
+  main > .infome {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
+  }
+  main .infome img {
+    width: 40%;
+    height: 30%;
+    left: 35%;
+  }
+  main .infome div p {
+    margin: 0;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 10px;
+    position: relative;
+    right: 2rem;
+  }
+  footer > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  nav ul {
+    font-size: 10px;
+  }
+
+  nav ul li {
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 2px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 10px;
+  }
+  .lgo {
+    width: 100%;
+    /* width: 30%; */
+    /* margin-left: 2rem; */
+  }
+
+  main .midden div p {
+    font-size: 13px;
+  }
+
+  main .product figure {
+    padding: 1rem;
+  }
+  main .product figure img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 100px;
+  }
+
+  main .infome img {
+    width: 40%;
+    height: 30%;
+    left: 35%;
+  }
+  main .infome div p {
+    margin: 0;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 10px;
+    position: relative;
+    right: 2rem;
+  }
+  footer > p {
+    font-size: 20px;
+  }
+}

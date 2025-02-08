@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d7b58f;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7b58f;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border: 1px solid black;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+nav ul li:hover {
+  color: white;
+  letter-spacing: 1px;
+}
+.lgo {
+  width: 100%;
+  margin-left: 13rem;
+}
+.zoek_mand {
+  position: fixed;
+  right: 0;
+}
+main {
+  background-color: #d7b58f;
+}
+
+main div img {
+  margin-top: 4rem;
+  border-radius: 5px;
+}
+main div {
+  text-align: center;
+  padding: 5rem;
+}
+main div h1 {
+  position: relative;
+}
+main div p:nth-child(3) {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 12px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+main div .prijs {
+  margin-top: 1rem;
+}
+main div button {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #d7b58f;
+  color: black;
+  margin-top: 1rem;
+  padding: 5px;
+  font-weight: bold;
+}
+main div button:hover {
+  background-color: white;
+  color: #000080;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+footer div ul {
+  display: flex;
+}
+footer p {
+  padding-bottom: 1rem;
+}
+footer > p {
+  font-size: 30px;
+  color: #d7b58f;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    font-size: 10px;
+  }
+
+  nav ul li {
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .lgo {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  main div img {
+    width: 50%;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer > p {
+    font-size: 20px;
+  }
+  body {
+    background-color: black;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    font-size: 10px;
+  }
+
+  nav ul li {
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .lgo {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  main div img {
+    width: 50%;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer > p {
+    font-size: 20px;
+  }
+  body {
+    background-color: black;
+  }
+}

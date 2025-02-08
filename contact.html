@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lgo">
+        <img src="fotos/Logo_Groom_Style.png" alt="logo shop" width="90" />
+      </div>
+    </header>
+    <main>
+      <section>
+        <img src="fotos/contact.png" alt="" width="40%" />
+      </section>
+
+      <div class="contactForm">
+        <h1>Contacteer ons</h1>
+        <form action="Teoman.com" method="post">
+          <label for="name">Naam:</label>
+          <input type="text" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" required />
+
+          <label for="message">Bericht:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Verzenden</button>
+        </form>
+        <aside>
+          <h2>Contacteer ons</h2>
+          <ul>
+            <li>Adres: Junostraat 20, 2600 Berchem</li>
+            <li>EMail: s142230@ap.be</li>
+            <li>Tel: 0486609586</li>
+            <div id="map"></div>
+            <script src="map.js"></script>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p><a href="contact.html">contact informatie</a></p>
+        <p>Volg ons</p>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="fotos/facebook.png" alt="facebook" width="40"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="fotos/instagram.png" alt="instagram" width="40"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="fotos/tiktoklogo.webp" alt="tiktok" width="40"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p>Groom &amp; Style</p>
+    </footer>
+  </body>
+</html>
